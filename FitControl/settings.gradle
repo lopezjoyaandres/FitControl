@@ -1,0 +1,2 @@
+rootProject.name='FitControl'
+include ':app'

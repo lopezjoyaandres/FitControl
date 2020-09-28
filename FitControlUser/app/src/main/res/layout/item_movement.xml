@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentMovement"
+    android:layout_width="match_parent"
+    android:layout_height="250dp">
+    <LinearLayout
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:elevation="8dp"
+        android:background="@drawable/registermid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+
+        android:orientation="vertical"
+
+
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.2">
+            <TextView
+
+                android:gravity="center"
+                android:elevation="5dp"
+                android:textSize="25dp"
+                android:textColor="#FFF"
+                android:id="@+id/idmovementHomeLogo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                >
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.4">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/idlateralelevations"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                    </com.github.mikephil.charting.charts.PieChart>
+                    <TextView
+                        android:visibility="invisible"
+                        android:gravity="center"
+                        android:textSize="12dp"
+                        android:textColor="@color/colorPrimary"
+                        android:id="@+id/idporcentajerv"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginEnd="7dp"
+                        android:layout_marginRight="7dp"
+                        android:background="@drawable/cornes_login"
+                        android:elevation="5dp">
+
+                    </TextView>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.6"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.75"
+
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent"
+
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+
+                        <LinearLayout
+                            android:elevation="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="0.5"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/midwhite"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                >
+                                <TextView
+                                    android:gravity="center"
+                                    android:id="@+id/idlevel"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/idlayoutlvl"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/backhometopblue"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.4"
+
+                                >
+                                <TextView
+                                    android:textColor="#FFF"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+
+                                    android:text="Level">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:elevation="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="0.5"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/midwhite"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                >
+                                <TextView
+                                    android:textColor="#000"
+                                    android:gravity="center"
+                                    android:id="@+id/idsets"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/idlayoutsets"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/backhometopblue"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.4"
+
+                                >
+                                <TextView
+                                    android:textColor="#FFF"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+
+                                    android:text="Sets">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="0.5"
+                        android:layout_height="match_parent"
+
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        android:gravity="center_vertical">
+                        <LinearLayout
+                            android:elevation="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:orientation="vertical"
+                            android:layout_weight="0.5"
+                            android:layout_margin="5dp"
+                            android:background="@drawable/midwhite"
+                            >
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                >
+                                <TextView
+                                    android:textColor="#000"
+                                    android:gravity="center"
+                                    android:id="@+id/idlastrep"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:id="@+id/idlayoutlastrep"
+                                android:layout_width="match_parent"
+                                android:background="@drawable/backhometopblue"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.4"
+
+                                >
+                                <TextView
+                                    android:textColor="#FFF"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:gravity="center"
+
+                                    android:text="Last Repetition">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+    </LinearLayout>
+</RelativeLayout>

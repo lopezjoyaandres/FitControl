@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.receiver.ReceiverFragment" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:background="#702F3137"
+        android:orientation="vertical">
+        <LinearLayout
+            android:elevation="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.4"
+            android:orientation="vertical"
+            android:background="@drawable/backhometopblue"
+            android:layout_marginBottom="10dp"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.2"
+                android:orientation="horizontal">
+                <ProgressBar
+                    android:id="@+id/ProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.094"
+                    app:layout_constraintStart_toStartOf="parent"
+                    tools:ignore="MissingConstraints"
+                    tools:visibility="visible" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="7dp"
+                    android:gravity="right"
+                    android:paddingRight="8dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/idimagenconnect"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        app:srcCompat="@android:drawable/ic_notification_overlay">
+
+                    </ImageView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="5dp"
+                        android:text="Connection">
+
+                    </TextView>
+
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.25"
+                    android:orientation="horizontal"
+
+                    android:layout_margin="5dp"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:gravity="center"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_margin="10dp"
+                            android:padding="10dp"
+                            android:elevation="15dp"
+                            android:background="@drawable/registermid"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:id="@+id/idcomments"
+                            android:textSize="15dp"
+                            android:gravity="center"
+                            >
+
+                        </TextView>
+
+                        <VideoView
+
+                            android:id="@+id/idgif"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.4"
+                            android:visibility="invisible"
+                            >
+
+                        </VideoView>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.6"
+            android:orientation="vertical">
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:orientation="vertical"
+                android:weightSum="1"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+                    <LinearLayout
+                        android:elevation="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.4"
+                        android:orientation="vertical"
+                        android:background="@drawable/registermid">
+                        <LinearLayout
+
+                            android:elevation="5dp"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/fondocuadros"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical"
+                            android:weightSum="1"
+                            android:gravity="center">
+                            <TextView
+                                android:id="@+id/numeroreps"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:gravity="bottom"
+                                android:textColor="@color/colorPrimary"
+
+                                android:layout_weight="0.7"
+                                android:textSize="20dp"
+                                >
+
+                            </TextView>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.3"
+                                android:textColor="@color/oscuro"
+
+                                android:text="Repetitions">
+
+                            </TextView>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:elevation="5dp"
+                            android:background="@drawable/fondocuadros"
+
+                            android:layout_margin="4dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.5"
+                            android:orientation="vertical"
+                            android:gravity="center|center_vertical"
+                            android:weightSum="1"
+                            >
+                            <TextView
+                                android:id="@+id/idtiempordescanso"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.6"
+                                android:gravity="bottom"
+                                android:textColor="@color/colorPrimary"
+
+                                android:textSize="20dp">
+
+                            </TextView>
+                            <TextView
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:gravity="center_horizontal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_weight="0.4"
+                                android:textColor="@color/oscuro"
+
+                                android:text="Total time between repetitions">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.6"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:elevation="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:background="@drawable/registermid"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3"
+                            android:weightSum="1"
+                            android:orientation="horizontal"
+
+                            >
+
+
+                            <LinearLayout
+                                android:layout_margin="4dp"
+                                android:elevation="5dp"
+                                android:layout_width="0dp"
+                                android:layout_marginBottom="2dp"
+                                android:background="@drawable/fondocuadros"
+
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical"
+                                android:weightSum="1"
+                                android:gravity="center">
+                                <TextView
+                                    android:id="@+id/buenasrepes"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.7"
+                                    android:gravity="center|bottom"
+                                    android:textColor="#196807"
+                                    android:textSize="20dp">
+
+                                </TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.3"
+                                    android:textColor="@color/oscuro"
+
+                                    android:text="Good repetitions"
+                                    android:gravity="center">
+
+                                </TextView>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="0.5"
+                                android:orientation="vertical"
+                                android:weightSum="1"
+                                android:elevation="5dp"
+                                android:gravity="center"
+                                android:layout_margin="4dp"
+                                android:background="@drawable/fondocuadros"
+
+                                >
+                                <TextView
+                                    android:id="@+id/malasrepes"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.7"
+                                    android:gravity="center|bottom"
+                                    android:textColor="#D03402"
+                                    android:textSize="20dp">
+
+                                </TextView>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="0dp"
+                                    android:layout_weight="0.3"
+                                    android:text="Bad repetitions"
+                                    android:textColor="@color/oscuro"
+
+                                    android:gravity="center">
+
+                                </TextView>
+                            </LinearLayout>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_marginBottom="5dp"
+                            android:elevation="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.7"
+                            android:background="@drawable/registermid">
+
+                            <androidx.recyclerview.widget.RecyclerView
+
+                                android:background="@drawable/fondocuadros"
+                                android:layout_margin="5dp"
+                                android:id="@+id/idreciverrv"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                            </androidx.recyclerview.widget.RecyclerView>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:elevation="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/bluerecycleview"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:orientation="horizontal"
+
+                   >
+                    <LinearLayout
+                        android:layout_margin="4dp"
+                        android:elevation="5dp"
+
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.75"
+                        android:orientation="vertical"
+                        android:gravity="center"
+                        android:weightSum="1"
+                        >
+                        <TextView
+                            android:id="@+id/idnombremovimiento"
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.7"
+                            android:gravity="bottom"
+                            android:textColor="#FFF"
+                            android:textSize="20dp">
+
+                        </TextView>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="0.3"
+                            android:text="Movement"
+                            android:textColor="@color/oscuro"
+                            >
+
+                        </TextView>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.25"
+                        android:gravity="center">
+                        <ImageButton
+
+                            android:layout_marginRight="5dp"
+                            android:id="@+id/botonReceiver"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:scaleType="fitXY"
+                            android:background="@drawable/botonon"
+
+                            android:saveEnabled="false"
+                            >
+
+                        </ImageButton>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
+

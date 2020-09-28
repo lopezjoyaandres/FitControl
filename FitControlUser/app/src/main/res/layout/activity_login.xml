@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+       >
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.55"
+            android:gravity="center"
+           >
+            <androidx.appcompat.widget.AppCompatImageView
+
+                android:id="@+id/loginImage1"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/login">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/buttonimagen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="23dp"
+                android:layout_marginEnd="19dp"
+                android:layout_marginRight="19dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                app:backgroundTint="#192D5E"
+                app:srcCompat="@android:drawable/ic_input_add" />
+        </RelativeLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.45"
+            android:orientation="vertical"
+
+           >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.8"
+
+                    android:orientation="vertical"
+                    >
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.33"
+                        android:gravity="center"
+                        android:paddingTop="25dp"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="20dp"
+                            android:layout_weight="0.3"
+                            android:text="USER">
+
+                        </TextView>
+                        <EditText
+                            android:focusable="true"
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:background="@drawable/bluerecycleview"
+                            android:text=""
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:textColor="#000"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:maxLength="8"
+                            android:layout_weight="0.7"
+                            android:layout_marginRight="20dp"
+                            android:id="@+id/iduser"
+
+                            >
+
+                        </EditText>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_height="0dp"
+                        android:gravity="center"
+                        android:layout_weight="0.33"
+                        android:paddingTop="15dp"
+                        >
+                        <TextView
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="20dp"
+                            android:layout_weight="0.3"
+                            android:text="BIRTHDAY">
+
+                        </TextView>
+                        <EditText
+                            android:focusableInTouchMode="true"
+                            android:gravity="center"
+                            android:background="@drawable/bluerecycleview"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_weight="0.7"
+                            android:inputType="date"
+                            android:textColor="#000"
+                            android:focusable="false"
+                            android:clickable="true"
+                            android:layout_marginRight="20dp"
+                            android:maxLines="1"
+                            android:id="@+id/idyear"
+
+
+                            >
+
+                        </EditText>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.33"
+                        android:orientation="horizontal">
+                        <TextView
+                            android:layout_width="0dp"
+                            android:gravity="center"
+                            android:layout_height="20dp"
+                            android:layout_weight="0.8"
+                            android:text="SEX">
+
+                        </TextView>
+                        <Spinner
+                            android:focusableInTouchMode="true"
+                            android:layout_width="0dp"
+                            android:layout_height="25dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_weight="0.2"
+                            android:id="@+id/idsex"
+
+                            android:entries="@array/gender"
+
+                            android:background="@drawable/bluerecycleview"
+
+                            >
+
+                        </Spinner>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="0.2"
+                    android:gravity="center">
+                    <ProgressBar
+                        android:id="@+id/idprogresslogin"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp">
+
+                    </ProgressBar>
+                    <Button
+                        android:layout_width="120dp"
+                        android:layout_height="40dp"
+                        android:text="SIGN IN"
+                        android:background="@color/colorPrimary"
+                        android:id="@+id/buttonSignIn"
+                        ></Button>
+                </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

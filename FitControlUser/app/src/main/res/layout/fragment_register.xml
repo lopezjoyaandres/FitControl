@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".ui.register.RegisterFragment" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="#702F3137"
+    android:orientation="vertical"
+    >
+
+
+    <LinearLayout
+        android:elevation="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:background="@drawable/backhometopblue"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:weightSum="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:orientation="horizontal"
+            android:background="#60FFFFFF"
+            android:weightSum="1">
+
+            <ImageButton
+                android:id="@+id/idmenosanio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@android:color/transparent"
+                android:src="?attr/actionModeCloseDrawable"
+
+                android:tint="@color/colorPrimary">
+
+            </ImageButton>
+            <TextView
+                android:id="@+id/idanio"
+                android:layout_width="0dp"
+                android:textColor="@color/oscuro"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/idmasanio"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+
+                android:src="?attr/actionModeCloseDrawable"
+
+                android:background="@android:color/transparent"
+                android:tint="@color/colorPrimary"
+                android:rotation="180"
+                >
+
+            </ImageButton>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1"
+            android:background="#5021A3B8">
+
+            <ImageButton
+                android:id="@+id/idmenosmes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+                android:background="@android:color/transparent"
+
+
+                android:src="?attr/actionModeCloseDrawable"
+                android:tint="@color/casiblanco">
+
+            </ImageButton>
+            <TextView
+                android:id="@+id/idmes"
+                android:layout_width="0dp"
+                android:textColor="@color/oscuro"
+                android:textSize="20dp"
+                android:gravity="center"
+                android:layout_height="match_parent"
+                android:layout_weight="0.8">
+
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/idmasmes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.1"
+
+                android:src="?attr/actionModeCloseDrawable"
+
+                android:background="@android:color/transparent"
+                android:tint="@color/casiblanco"
+                android:rotation="180"
+                >
+
+            </ImageButton>
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8">
+            <com.github.mikephil.charting.charts.BarChart
+                android:id="@+id/idgrafica"
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.github.mikephil.charting.charts.BarChart>
+        </RelativeLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/idlayoutinfo"
+        android:elevation="10dp"
+        android:background="@drawable/registermid"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.4"
+        android:weightSum="1"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_margin="2.5dp"
+                android:background="#30A1B8BC"
+                android:layout_width="0dp"
+
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="2dp"
+                    android:background="#60FFFFFF"
+                    android:elevation="5dp"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:weightSum="1">
+                    <TextView
+                        android:id="@+id/idfechaclick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:gravity="bottom"
+                        android:textColor="@color/colorPrimary"
+
+                        android:layout_weight="0.7"
+                        android:textSize="20dp"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:textColor="@color/oscuro"
+
+                        android:text="Date">
+
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="2.5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#30A1B8BC"
+                android:orientation="vertical"
+
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:background="#60FFFFFF"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:elevation="5dp"
+
+                    >
+                    <TextView
+                        android:id="@+id/idrepsclick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:gravity="bottom"
+                        android:textColor="@color/colorPrimary"
+
+                        android:layout_weight="0.7"
+                        android:textSize="20dp"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:textColor="@color/oscuro"
+
+                        android:text="Repetitions">
+
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="1">
+            <LinearLayout
+                android:layout_margin="2.5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:background="#30A1B8BC"
+
+                android:gravity="center"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_margin="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#60FFFFFF"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:weightSum="1"
+                    android:elevation="5dp"
+
+                    >
+                    <TextView
+                        android:id="@+id/idgoodrepsclick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:gravity="bottom"
+                        android:textColor="#196807"
+
+                        android:layout_weight="0.7"
+                        android:textSize="20dp"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:textColor="@color/oscuro"
+
+                        android:text="Good Repetitions">
+
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_margin="2.5dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="#30A1B8BC"
+                android:weightSum="1">
+                <LinearLayout
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:background="#60FFFFFF"
+                    android:weightSum="1"
+                    android:orientation="vertical"
+                    android:elevation="5dp"
+                    >
+                    <TextView
+                        android:id="@+id/idbadrepsclick"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:gravity="bottom"
+                        android:textColor="#D03402"
+
+                        android:layout_weight="0.7"
+                        android:textSize="20dp"
+                        >
+
+                    </TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.3"
+                        android:textColor="@color/oscuro"
+
+                        android:text="Bad Repetitions">
+
+                    </TextView>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:elevation="10dp"
+        android:background="@drawable/registerbot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/idogomovements"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:text="Movements"
+            android:enabled="false"
+            android:background="@color/colorPrimary">
+
+        </Button>
+    </LinearLayout>
+</LinearLayout>
+
+</RelativeLayout>
+

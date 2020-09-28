@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#21A3B8</color>
+    <color name="colorPrimaryDark">#A1B8BC</color>
+    <color name="colorAccent">#27E3A5</color>
+    <color name="colorBlueRecycler">#E3EDF9</color>
+    <color name="colorGreenBlue">#27E3A5</color>
+    <color name="fondoLogin">#E0FFFF</color>
+    <color name="azulCadete">#5F9EA0</color>
+
+
+    <color name="azulIntenso">#21A3B8</color>
+    <color name="casiblanco">#FBFBFB</color>
+    <color name="azul1">#CCDCDF</color>
+    <color name="azul2">#A1B8BC</color>
+    <color name="oscuro">#2F3137</color>
+    <color name="begginer">#A56C0D</color>
+    <color name="advance">#0D77A5</color>
+    <color name="experienced">#39C209</color>
+    <color name="expert">#DCD80B</color>
+</resources>

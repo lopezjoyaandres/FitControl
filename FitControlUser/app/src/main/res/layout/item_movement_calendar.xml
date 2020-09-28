@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:background="@drawable/registermid"
+        android:elevation="10dp"
+        android:id="@+id/idparentmovcalendar"
+        android:layout_width="200dp"
+        android:layout_height="300dp"
+        android:layout_weight="0.4"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:id="@+id/texttitle"
+            android:layout_height="0dp"
+            android:layout_weight="0.15">
+            <TextView
+                android:gravity="center"
+                android:id="@+id/idnamemovementcalendar"
+                android:textColor="#FFF"
+                android:textSize="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                ></TextView>
+        </LinearLayout>
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.85"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.75">
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/idgraf"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.github.mikephil.charting.charts.PieChart>
+                <TextView
+                    android:visibility="invisible"
+                    android:gravity="center"
+                    android:textSize="12dp"
+                    android:textColor="@color/colorPrimary"
+                    android:id="@+id/idporcentajerv"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="11dp"
+                    android:layout_marginEnd="7dp"
+                    android:layout_marginRight="7dp"
+                    android:background="@drawable/cornes_login"
+                    android:elevation="5dp">
+
+                </TextView>
+            </RelativeLayout>
+           <LinearLayout
+               android:layout_width="match_parent"
+               android:layout_height="0dp"
+               android:layout_weight="0.25"
+               android:orientation="vertical">
+               <TextView
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="0.4"
+                   android:textSize="20dp"
+                   android:textColor="#FFF"
+                   android:gravity="center"
+                   android:background="@drawable/notes"
+                   android:text="Sets">
+
+               </TextView>
+               <TextView
+                   android:gravity="center"
+                   android:textColor="#000"
+                   android:id="@+id/idsetsmovcalendar"
+                   android:layout_width="match_parent"
+                   android:layout_height="0dp"
+                   android:layout_weight="0.6">
+
+               </TextView>
+           </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

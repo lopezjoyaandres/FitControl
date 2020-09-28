@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.myProfile" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:orientation="vertical"
+
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.55"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/loginImage"
+                android:adjustViewBounds="true"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/login">
+
+            </androidx.appcompat.widget.AppCompatImageView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="0.075"
+
+                android:orientation="horizontal"
+                >
+
+                <ImageButton
+                    android:id="@+id/botonBack"
+                    android:layout_width="70dp"
+                    android:layout_height="match_parent"
+                    android:background="#00ffffff"
+                    android:src="@android:drawable/ic_menu_revert">
+
+                </ImageButton>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:gravity="right"
+                    android:paddingLeft="100dp">
+                    <ImageView
+                        android:id="@+id/buttonDelete"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/incorrect">
+
+                    </ImageView>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:textColor="#000"
+                android:textSize="50px"
+                android:id="@+id/userProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="43dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="18dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginEnd="193dp"
+                android:layout_marginRight="193dp"
+                android:layout_marginBottom="7dp"
+                android:background="#60FFFFFF"
+                android:layout_weight="0.33"
+                android:gravity="center">
+
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/changeimage"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/boton_imagen"
+                android:src="@android:drawable/ic_menu_edit">
+
+            </ImageButton>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.325"
+            android:orientation="vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@color/azul2"
+                >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="20dp"
+                    android:text="Information"
+                    android:layout_marginTop="5dp"
+                    >
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="Birthday"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    >
+
+                </TextView>
+                <EditText
+                    android:id="@+id/yearsProfile"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:inputType="date"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:maxLines="1"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+
+                </EditText>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+
+                android:layout_height="40dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal"
+                >
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.2"
+                    android:text="Sex"
+                    android:textSize="15dp"
+                    android:gravity="center_vertical"
+                    >
+
+                </TextView>
+                <Spinner
+                    android:id="@+id/sexProfile"
+                    android:layout_width="0dp"
+                    android:gravity="center"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:entries="@array/gender"
+                    >
+
+                </Spinner>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.12"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <ProgressBar
+                    android:id="@+id/idprogressupdate"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp">
+
+                </ProgressBar>
+                <Button
+                    android:id="@+id/bottonUpdate"
+                    android:layout_width="160dp"
+                    android:layout_height="40dp"
+                    android:text="Save Changes"
+                    android:textColor="@color/casiblanco"
+                    android:background="@drawable/boton_imagen">
+
+                </Button>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

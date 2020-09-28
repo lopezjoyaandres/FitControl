@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/layoutmovement"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginRight="5dp"
+    android:background="@drawable/background_device"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:padding="2dp"
+        android:layout_marginLeft="10dp"
+        android:layout_weight="0.25"
+        android:gravity="left|center_vertical"
+        android:background="@drawable/background_lateral_elevation"
+        android:src="@drawable/lateral_elevation"
+
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/tvNameMovement"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.75"
+        android:gravity="center"
+        android:text="NOMBRE"
+        ></TextView>
+
+
+
+
+
+
+</LinearLayout>

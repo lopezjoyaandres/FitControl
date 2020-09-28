@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/azul2"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+
+    >
+    <TextView
+        android:id="@+id/idnumber"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.2"
+        android:gravity="center"
+        android:textSize="15dp"
+        >
+
+    </TextView>
+    <TextView
+        android:id="@+id/idnameMovement"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35"
+        android:gravity="center"
+        android:textSize="15dp"
+        >
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/iddate"
+        android:layout_width="0dp"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.35">
+
+    </TextView>
+    <ImageView
+        android:id="@+id/idrepok"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.15"></ImageView>
+
+
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.movements.MovementsRepFragment">
+
+    <LinearLayout
+        android:background="#702F3137"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+        <LinearLayout
+            android:id="@+id/layoutmovrep"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.10"
+            android:background="@drawable/backhometopblue"
+            android:elevation="10dp">
+            <TextView
+                android:id="@+id/idnamemovrep"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Movements"
+                android:textSize="30dp"
+                android:gravity="center"
+
+                android:textColor="#FFF">
+
+            </TextView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.9">
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/idrvmovrepetitions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:scrollbars="vertical"
+                android:orientation="vertical"
+                android:scrollbarSize="5dp"
+                android:weightSum="1">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

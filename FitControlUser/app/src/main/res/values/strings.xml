@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Fit  Control User</string>
+    <string name="tab_text_1">Tab 1</string>
+    <string name="tab_text_2">Tab 2</string>
+    <string name="title_activity_main">main</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="Profile">Profile</string>
+    <string name="menu_receiver">Receiver</string>
+    <string name="menu_register">Register</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Register</string>
+    <string name="menu_slideshow">Receiver</string>
+    <string name="menu_movements">Movements</string>
+
+    <string name="lateralelevations"><b>Lateral Elevations</b></string>
+    <string-array name="gender">
+        <item >Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string name="home_second">Home Second</string>
+
+    <string name="lateralelevation0">You did a good repetition.</string>
+    <string name="lateralelevation1">You should have flexed your elbow less.</string>
+    <string name="lateralelevation2">you should have flexed your elbow more.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
